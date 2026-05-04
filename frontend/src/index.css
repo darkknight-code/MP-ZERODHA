@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav-link{
+  margin-left: 40px;
+}
+.btn:hover{
+  background: #000;
+}
+#supportHero{
+  background-color: rgb(56,126,209);
+  color: white;
+}
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#supportHero a{
+ color: white; 
+}
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+/* ===== Auth Page Layout ===== */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #387ed1, #5aa9f8);
+}
+
+/* ===== Card ===== */
+.auth-card {
+  background: #fff;
+  padding: 40px 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ===== Title ===== */
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== Form ===== */
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Input Fields ===== */
+.auth-card input {
+  margin-bottom: 15px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-card input:focus {
+  border-color: #387ed1;
+  box-shadow: 0 0 5px rgba(56, 126, 209, 0.3);
+}
+
+/* ===== Button ===== */
+.auth-card button {
+  padding: 12px;
+  background: #387ed1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.auth-card button:hover {
+  background: #2c6dc0;
+}
+
+/* ===== Bottom Text ===== */
+.auth-card span {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #387ed1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
