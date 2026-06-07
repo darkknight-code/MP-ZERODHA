@@ -5,7 +5,7 @@ const Holdings = () => {
     const [allHoldings,setallHoldings]=useState([]);
     useEffect(() => {
  axios
- .get("http://localhost:3002/api/holdings")
+ .get("https://mp-zerodha.onrender.com/api/holdings")
     .then((res) => {
       setallHoldings(res.data);
     })

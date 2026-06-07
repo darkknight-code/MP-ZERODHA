@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/api/auth/login",
+        "https://mp-zerodha.onrender.com/api/auth/login",
         {
           ...inputValue,
         },

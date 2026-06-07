@@ -12,7 +12,7 @@ const BuyActionWindow = ({ uid }) => {
     console.log("BUY CLICKED");
 
     try {
-      const res = await axios.post("http://localhost:3002/newOrder", {
+      const res = await axios.post("https://mp-zerodha.onrender.com/newOrder", {
         name: uid,
         qty: Number(stockQuantity),
         price: Number(stockPrice),
