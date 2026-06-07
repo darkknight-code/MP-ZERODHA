@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3002;
 
 
 app.use(cors({
-  origin: ["http://localhost:3001","http://localhost:3000","https://your-frontend.vercel.app",
+  origin: ["http://localhost:3001","http://localhost:3000","https://mp-zerodha.vercel.app",
   "https://your-dashboard.vercel.app"],   
   credentials: true,
 }));

@@ -14,7 +14,6 @@ const Holdings = () => {
     });
 }, []);
 //     const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-const labels = allHoldings.map((stock) => stock.name);
 
 const data = {
   labels: allHoldings.map((stock) => stock.name),
