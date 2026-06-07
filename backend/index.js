@@ -5,9 +5,9 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 const authRoute = require("./Routes/AuthRoute");
-const { HoldingModel } = require("./models/HoldingModel");
-const { PostionModel } = require("./models/PostionModel");
-const { OrdersModel } = require("./models/OrdersModels");
+const { HoldingModel } = require("./Models/HoldingModel");
+const { PostionModel } = require("./Models/PostionModel");
+const { OrdersModel } = require("./Models/OrdersModels");
 
 const app = express();
 const PORT = process.env.PORT || 3002;
