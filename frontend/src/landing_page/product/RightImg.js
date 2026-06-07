@@ -23,7 +23,7 @@ function RightImg({
           </div>
         </div>
         <div className="col-5 p-5">
-          <img src={imageUrl}></img>
+          <img src={imageUrl} alt="imagess"></img>
         </div>
       </div>
     </div>

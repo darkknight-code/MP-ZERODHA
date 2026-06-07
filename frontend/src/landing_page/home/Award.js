@@ -25,7 +25,7 @@ function Awards() {
                                 <li><p>Bonds and Gold</p></li>
                             </ul>
                         </div>
-                       <img src='./media/pressLogos.png' style={{width:"90%"}}></img>    
+                       <img src='./media/pressLogos.png' style={{width:"90%"}} alt="pressLogo"></img>    
                     </div>
                      
                 </div>
