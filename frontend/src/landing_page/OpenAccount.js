@@ -1,16 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function OpenAccount() {
-    return ( 
-         <div className='container p-5 mb-5'>
+    const navigate = useNavigate();
+
+    return (
+        <div className='container p-5 mb-5'>
             <div className='row text-center'>
                 <h1 className='mt-5'>Open a Zerodha account</h1>
-                <p className='mt-3 mb-5' style={{fontWeight:"450 px"}}>Online platform to invest in stocks,derivates,mutal funds,and more</p>
-                <button className='p-2 btn btn-primary fs-5 mb-5' style={{width:"20%",margin:"0 auto"}}>Sign up for free</button>
-            </div>
+                <p className='mt-3 mb-5'>
+                    Online platform to invest in stocks, derivatives, mutual funds, and more
+                </p>
 
+                <button
+                    className='p-2 btn btn-primary fs-5 mb-5'
+                    style={{ width: "20%", margin: "0 auto" }}
+                    onClick={() => navigate("/signup")}
+                >
+                    Sign up for free
+                </button>
+            </div>
         </div>
-     );
+    );
 }
 
 export default OpenAccount;
