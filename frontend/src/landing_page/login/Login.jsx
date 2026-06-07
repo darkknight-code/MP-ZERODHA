@@ -43,7 +43,7 @@ const Login = () => {
         handleSuccess(message);
 
         setTimeout(() => {
-          window.location.href = "http://localhost:3000";
+          window.location.href = "https://mp-zerodha-37xs.vercel.app";
         }, 1000);
       }
     } catch (error) {
