@@ -3,7 +3,7 @@ import axios from "axios";
 const Positions = () => {
       const [allPositions,setallPositions]=useState([]);
     useEffect(()=>{
-          axios.get("http://localhost:3002/allPositions").then((res)=>{
+          axios.get("http://localhost:3002/api/holdings").then((res)=>{
             setallPositions(res.data);
             console.log(res.data);
           })

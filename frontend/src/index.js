@@ -13,8 +13,7 @@ import Footer from "./landing_page/Footer";
 import NotFound from "./landing_page/NotFound";
 import 'react-toastify/dist/ReactToastify.css';
 import Login from "./landing_page/login/Login";
-import dashboard from "../../dashboard/dashboard/src/index"
-import Dashboard from "../../dashboard/dashboard/src/components/Dashboard";
+
 
 
 
@@ -32,7 +31,6 @@ root.render(
         <Route path="/pricing" element={<PricingPage/>}/>
         <Route path="/support" element={<SupportPage/>}/>
         <Route path="*" element={<NotFound/>}/>
-         <Route path="/dashboard" element={<Dashboard/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

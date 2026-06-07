@@ -35,18 +35,19 @@ const Login = () => {
         {
           ...inputValue,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       console.log(data);
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
-        navigate("/dashboard");
-      } else {
-        handleError(message);
+
+        setTimeout(() => {
+          window.location.href = "http://localhost:3000";
+        }, 1000);
       }
     } catch (error) {
-      console.log("ERROR:", error.response?.data);  
+      console.log("ERROR:", error.response?.data);
       console.log(error);
     }
     setInputValue({
@@ -57,42 +58,42 @@ const Login = () => {
   };
 
   return (
-  <div className="auth-container">
-    <div className="auth-card">
-      <h2>Login Account</h2>
+    <div className="auth-container">
+      <div className="auth-card">
+        <h2>Login Account</h2>
 
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <input
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Email"
-            onChange={handleOnChange}
-          />
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <input
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Email"
+              onChange={handleOnChange}
+            />
+          </div>
 
-        <div className="input-group">
-          <input
-            type="password"
-            name="password"
-            value={password}
-            placeholder="Password"
-            onChange={handleOnChange}
-          />
-        </div>
+          <div className="input-group">
+            <input
+              type="password"
+              name="password"
+              value={password}
+              placeholder="Password"
+              onChange={handleOnChange}
+            />
+          </div>
 
-        <button type="submit">Login</button>
+          <button type="submit">Login</button>
 
-        <span className="auth-footer">
-          Don't have an account? <Link to="/signup">Signup</Link>
-        </span>
-      </form>
+          <span className="auth-footer">
+            Don't have an account? <Link to="/signup">Signup</Link>
+          </span>
+        </form>
+      </div>
+
+      <ToastContainer />
     </div>
-
-    <ToastContainer />
-  </div>
-);
+  );
 };
 
 export default Login;
